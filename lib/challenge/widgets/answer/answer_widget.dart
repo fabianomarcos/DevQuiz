@@ -6,24 +6,29 @@ class AnswerWidget extends StatelessWidget {
 	final bool isRight;
 	final bool isSelected;
 
-	const AnswerWidget({Key? key, required this.title, this.isRight = false, this.isSelected = false,}) : super(key: key);
+	const AnswerWidget({
+		Key? key,
+		required this.title,
+		this.isRight = false,
+		this.isSelected = false,
+	}) : super(key: key);
 
 	Color get _selectedColorRight =>
-      isRight ? AppColors.darkGreen : AppColors.darkRed;
+      	isRight ? AppColors.darkGreen : AppColors.darkRed;
 
-  Color get _selectedBorderRight =>
-      isRight ? AppColors.lightGreen : AppColors.lightRed;
+	Color get _selectedBorderRight =>
+		isRight ? AppColors.lightGreen : AppColors.lightRed;
 
-  Color get _selectedColorCardRight =>
-      isRight ? AppColors.lightGreen : AppColors.lightRed;
+	Color get _selectedColorCardRight =>
+		isRight ? AppColors.lightGreen : AppColors.lightRed;
 
-  Color get _selectedBorderCardRight =>
-      isRight ? AppColors.green : AppColors.red;
+	Color get _selectedBorderCardRight =>
+		isRight ? AppColors.green : AppColors.red;
 
-  TextStyle get _selectedTextStyleRight =>
-      isRight ? AppTextStyles.bodyDarkGreen : AppTextStyles.bodyDarkRed;
+	TextStyle get _selectedTextStyleRight =>
+		isRight ? AppTextStyles.bodyDarkGreen : AppTextStyles.bodyDarkRed;
 
-  IconData get _selectedIconRight => isRight ? Icons.check : Icons.close;
+	IconData get _selectedIconRight => isRight ? Icons.check : Icons.close;
 
 	@override
 	Widget build(BuildContext context) {
@@ -34,7 +39,12 @@ class AnswerWidget extends StatelessWidget {
 				decoration: BoxDecoration(
 					color: isSelected ? _selectedColorCardRight : AppColors.white,
 					borderRadius: BorderRadius.circular(10),
-						border: Border.fromBorderSide(BorderSide(color: isSelected ? _selectedBorderCardRight : AppColors.border)),
+						border: Border.fromBorderSide(
+							BorderSide(
+								color:
+									isSelected ? _selectedBorderCardRight : AppColors.border
+							)
+						),
 				),
 				child: Row(
 					mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -43,7 +53,8 @@ class AnswerWidget extends StatelessWidget {
 							child: Text(
 								title,
 								style: isSelected ? _selectedTextStyleRight : AppTextStyles.body,
-							)),
+							)
+						),
 						Container(
 							width: 24,
 							height: 24,
@@ -51,7 +62,9 @@ class AnswerWidget extends StatelessWidget {
 								color: isSelected ? _selectedColorRight : AppColors.white,
 								borderRadius: BorderRadius.circular(500),
 								border: Border.fromBorderSide(
-									BorderSide(color: isSelected ? _selectedBorderRight : AppColors.border)
+									BorderSide(
+										color: isSelected ? _selectedBorderRight : AppColors.border
+									)
 								)
 							),
 							child: isSelected
@@ -60,7 +73,7 @@ class AnswerWidget extends StatelessWidget {
 						),
 					],
 				),
-		),
+			),
 		);
 	}
 }
