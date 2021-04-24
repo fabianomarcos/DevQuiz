@@ -1,0 +1,27 @@
+{
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"extends": [
+		"airbnb",
+		"prettier",
+		"eslint:recommended"
+	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"plugins": ["prettier"],
+	"rules": {
+		"prettier/prettier": "error",
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"json": "never"
+			}
+		]
+	}
+}
