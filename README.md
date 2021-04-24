@@ -1,16 +1,10 @@
-# devquiz
+#  DevQuiz
 
-A new Flutter project.
+## Avançando nos estudos do Flutter
 
-## Getting Started
+### Assista às funcionalidades aplicadas até o momento:
 
-This project is a starting point for a Flutter application.
+[![Meu primeiro App Flutter](http://img.youtube.com/vi/oANcNHwZg_c/0.jpg)](http://www.youtube.com/watch?v=oANcNHwZg_c "Meu primeiro App Flutter")
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Canal no youtube
+[Fabiano Marcos Dev](https://www.youtube.com/channel/UCPgvrtFWP8phTMkJEROqRpA)
