@@ -9,7 +9,7 @@ class NextButtonWidget extends StatelessWidget {
 	final Color borderColor;
 	final VoidCallback onTap;
 
-	NextButtonWidget({
+	const NextButtonWidget({
 		required this.label,
 		required this.backgroundColor,
 		required this.fontColor,
@@ -27,6 +27,13 @@ class NextButtonWidget extends StatelessWidget {
 	NextButtonWidget.white({required String label, required VoidCallback onTap}):
 		this.backgroundColor = AppColors.white,
 		this.fontColor = AppColors.grey,
+		this.label = label,
+		this.onTap = onTap,
+		this.borderColor= AppColors.border;
+
+	NextButtonWidget.purple({required String label, required VoidCallback onTap}):
+		this.backgroundColor = AppColors.purple,
+		this.fontColor = AppColors.white,
 		this.label = label,
 		this.onTap = onTap,
 		this.borderColor= AppColors.darkGreen;
